@@ -1,0 +1,25 @@
+{
+  "name": "mongodb_and_mongoose",
+  "version": "1.0.0",
+  "description": "a boilerplate project",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PJMantoss/mongodb_and_mongoose.git"
+  },
+  "keywords": [
+    "node",
+    "mongodb",
+    "mongoose",
+    "express"
+  ],
+  "author": "PJ Mantoss",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/PJMantoss/mongodb_and_mongoose/issues"
+  },
+  "homepage": "https://github.com/PJMantoss/mongodb_and_mongoose#readme"
+}
