@@ -45,3 +45,10 @@ let arrayOfPeople = [
       favoriteFoods: ["Yam","Porridge","Zobo"]
     }
   ]
+
+const createManyPeople = (arrayOfPeople, done) => {
+    Person.create(arrayOfPeople, (err, data) => {
+      if(err) console.error(err)
+      done(null, data);
+    })
+  };
