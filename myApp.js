@@ -27,3 +27,21 @@ const createAndSavePerson = (done) => {
         done(null, data)
       })
 }
+
+let arrayOfPeople = [
+    {
+      name: "Papa Joe",
+      age: 62,
+      favoriteFoods: ["Corn Food","Porridge","Potato"]
+  },
+    {
+      name: "Mama Papis",
+      age: 61,
+      favoriteFoods: ["Rice","Salad","Fish"]
+    },
+    {
+      name: "Mummy Shyne",
+      age: 65,
+      favoriteFoods: ["Yam","Porridge","Zobo"]
+    }
+  ]
