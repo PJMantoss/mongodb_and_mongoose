@@ -19,11 +19,11 @@ const createAndSavePerson = (done) => {
     papaJoe = new Person({
       name: "Papa Joe",
       age: 62,
-      favoriteFoods: ["Corn Food","Pooridge","Potato"]
+      favoriteFoods: ["Corn Food","Porridge","Potato"]
     });
 
     papaJoe.save((err, data) => {
-        if(err) console.error("Error");
+        if(err) console.error(err);
         done(null, data)
       })
 }
