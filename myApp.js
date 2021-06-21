@@ -11,3 +11,5 @@ const personSchema = new Schema({
     age: Number,
     favoriteFoods: [String]
   });
+
+let Person = mongoose.model("Person", personSchema);
