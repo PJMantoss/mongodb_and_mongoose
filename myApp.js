@@ -28,6 +28,7 @@ const createAndSavePerson = (done) => {
       })
 }
 
+//Challenge 4 - Create Many Records with model.create()
 let arrayOfPeople = [
     {
       name: "Papa Joe",
