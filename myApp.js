@@ -77,6 +77,7 @@ const createManyPeople = (arrayOfPeople, done) => {
     })
   };
 
+  //Challenge 7 - Use model.findById() to Search Your Database By _id
   const findPersonById = (personId, done) => {
     Person.findById({_id: personId}, (err, data) => {
       if(err) console.error(err);
