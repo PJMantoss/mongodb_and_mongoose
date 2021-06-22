@@ -76,3 +76,10 @@ const createManyPeople = (arrayOfPeople, done) => {
       done(null, data);
     })
   };
+
+  const findPersonById = (personId, done) => {
+    Person.findById({_id: personId}, (err, data) => {
+      if(err) console.error(err);
+      done(null,data);
+    })
+  };
