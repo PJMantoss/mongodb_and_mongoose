@@ -85,6 +85,7 @@ const createManyPeople = (arrayOfPeople, done) => {
     })
   };
 
+  //Challenge 8 - Perform Classic Updates by Running Find, Edit, then Save
   const findEditThenSave = (personId, done) => {
     const foodToAdd = "hamburger";
     //Use .findById() method to find the perosn by _id using parameter personId as key
