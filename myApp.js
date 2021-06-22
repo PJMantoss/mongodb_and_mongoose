@@ -84,3 +84,18 @@ const createManyPeople = (arrayOfPeople, done) => {
       done(null,data);
     })
   };
+
+  const findEditThenSave = (personId, done) => {
+    const foodToAdd = "hamburger";
+    //Use .findById() method to find the perosn by _id using parameter personId as key
+    Person.findById(personId, (err, data) => {
+      if(err) console.error(err);
+      //use Array.push() to update list of the person's favoriteFoods
+      data.favoriteFoods.push(foodToAdd);
+      //Inside the find callback, save() the updated person
+      data.save((err, updatedData) => {
+        if(err) console.error(err);
+        done(null, updatedData)
+      })
+    })
+  };
