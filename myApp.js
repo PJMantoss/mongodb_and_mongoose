@@ -68,3 +68,11 @@ const createManyPeople = (arrayOfPeople, done) => {
       done(null, data);
     })
   };
+
+//Challenge 6 - Use model.findOne() to Return a Single Matching Document from Your Database
+  const findOneByFood = (food, done) => {
+    Person.findOne({favoriteFoods: food}, (err, data) => {
+      if(err) console.error(err);
+      done(null, data);
+    })
+  };
