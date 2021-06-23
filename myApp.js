@@ -112,4 +112,6 @@ const createManyPeople = (arrayOfPeople, done) => {
     })
   }
 
-  const findAndUpdate = (personName, done) => {}
+  const findAndUpdate = (personName, done) => {
+    const ageToSet = 20;
+  }
