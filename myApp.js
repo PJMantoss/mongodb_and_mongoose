@@ -124,4 +124,9 @@ const createManyPeople = (arrayOfPeople, done) => {
   }
 
 
-  const removeById = (personId, done) => {}
+  const removeById = (personId, done) => {
+    Person.findByIdAndRemove(personId, (err, delData) => {
+      if(err) console.error(err)
+      done(null, delData);
+    });
+  }
