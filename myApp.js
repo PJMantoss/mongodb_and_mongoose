@@ -131,4 +131,6 @@ const createManyPeople = (arrayOfPeople, done) => {
     });
   }
 
-  const removeManyPeople = (done) => {}
+  const removeManyPeople = (done) => {
+    const nameToRemove = "Mary";
+  }
