@@ -141,6 +141,7 @@ const createManyPeople = (arrayOfPeople, done) => {
     });
   }
 
+  // Challenge 12 - Chain Search Query Helpers to Narrow Search Results
   const queryChain = (done) => {
     const foodToSearch = "burrito";
 
