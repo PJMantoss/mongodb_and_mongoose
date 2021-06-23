@@ -122,3 +122,6 @@ const createManyPeople = (arrayOfPeople, done) => {
       done(null, updatedData);
     });
   }
+
+
+  const removeById = (personId, done) => {}
