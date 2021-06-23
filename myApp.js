@@ -131,6 +131,7 @@ const createManyPeople = (arrayOfPeople, done) => {
     });
   }
 
+  // Challenge 11 - Delete Many Documents with model.remove()
   const removeManyPeople = (done) => {
     const nameToRemove = "Mary";
 
