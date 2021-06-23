@@ -123,7 +123,7 @@ const createManyPeople = (arrayOfPeople, done) => {
     });
   }
 
-
+// Challenge 10 - Delete One Document Using model.findByIdAndRemove
   const removeById = (personId, done) => {
     Person.findByIdAndRemove(personId, (err, delData) => {
       if(err) console.error(err)
