@@ -130,3 +130,5 @@ const createManyPeople = (arrayOfPeople, done) => {
       done(null, delData);
     });
   }
+
+  const removeManyPeople = (done) => {}
