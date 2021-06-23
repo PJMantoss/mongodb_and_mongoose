@@ -140,3 +140,5 @@ const createManyPeople = (arrayOfPeople, done) => {
       done(null, delName);
     });
   }
+
+  const queryChain = (done) => {}
