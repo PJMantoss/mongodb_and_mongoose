@@ -101,7 +101,7 @@ const createManyPeople = (arrayOfPeople, done) => {
     })
   };
 
-  //Challenge 9 -
+  //Challenge 9 - Perform New Updates on a Document Using model.findOneAndUpdate()
   const findAndUpdate = (personName, done) => {
     const ageToSet = 20;
 
