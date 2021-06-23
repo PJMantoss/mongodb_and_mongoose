@@ -133,4 +133,9 @@ const createManyPeople = (arrayOfPeople, done) => {
 
   const removeManyPeople = (done) => {
     const nameToRemove = "Mary";
+
+    Person.remove({name: nameToRemove}, (err, delName) => {
+      if(err) console.error(err);
+      done(null, delName);
+    });
   }
