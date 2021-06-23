@@ -101,4 +101,12 @@ const createManyPeople = (arrayOfPeople, done) => {
     })
   };
 
-  const findAndUpdate = (personName, done) => {}
+  const findAndUpdate = (personName, done) => {
+    const ageToSet = 20;
+
+    Person.findOneAndUpdate({name: personName}, {age: ageToSet}, { new: true }, (err, updatedData) => {
+      if(err) console.error(err);
+
+      done(null, updatedData);
+    })
+  }
